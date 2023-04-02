@@ -1,3 +1,8 @@
+// images
+import adminisThumb from "../projects/dashboard/Thumbnail_Dashboard.png"
+import ecommerceThumb from "../projects/ecommerce/Thumbnail_Ecommerce.png"
+import academyThumb from "../projects/academy/Thumbnail_Academy.png"
+
 interface Content {
 	title: string
 	subtitle: string
@@ -25,7 +30,7 @@ export const projects: Project[] = [
 		id: 1,
 		title: "Adminis",
 		subtitle: "The complete Dashboard",
-		thumbnail: "/src/assets/projects/dashboard/Thumbnail_Dashboard.png",
+		thumbnail: adminisThumb,
 		link: "https://yanndarwish.github.io/Dashboard/",
 		tech: ["typescript", "react", "mui"],
 		content: [
@@ -98,7 +103,7 @@ export const projects: Project[] = [
 		id: 2,
 		title: "Ecommerce",
 		subtitle: "The solid E-commerce",
-		thumbnail: "/src/assets/projects/ecommerce/Thumbnail_Ecommerce.png",
+		thumbnail: ecommerceThumb,
 		link: "https://yanndarwish.github.io/Ecommerce/",
 		tech: ["react", "redux", "typescript", "mui"],
 		content: [
@@ -154,7 +159,7 @@ export const projects: Project[] = [
 		id: 3,
 		title: "Academy",
 		subtitle: "The Landing page",
-		thumbnail: "/src/assets/projects/academy/Thumbnail_Academy.png",
+		thumbnail: academyThumb,
 		link: "https://yanndarwish.github.io/Academy/",
 		tech: ["react", "typescript", "mui"],
 		content: [
