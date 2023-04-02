@@ -1,7 +1,40 @@
-// images
+// IMAGES
+// amdinis
 import adminisThumb from "../projects/dashboard/Thumbnail_Dashboard.png"
+import adminisHome from "../projects/dashboard/Home_Dashboard.png"
+import adminisHome2 from "../projects/dashboard/Home_Dashboard-2.png"
+import adminisTheme from "../projects/dashboard/Theme_Dashboard.png"
+import adminisSidebar from "../projects/dashboard/Sidebar_Dashboard.png"
+import adminisTables from "../projects/dashboard/Tables_Dashboard.png"
+import adminisTables2 from "../projects/dashboard/Tables_Dashboard-2.png"
+import adminisBar from "../projects/dashboard/Charts_Dashboard.png"
+import adminisBar2 from "../projects/dashboard/Charts_Dashboard-2.png"
+import adminisLine from "../projects/dashboard/Charts_Dashboard-3.png"
+import adminisLine2 from "../projects/dashboard/Charts_Dashboard-4.png"
+import adminisPie from "../projects/dashboard/Charts_Dashboard-5.png"
+import adminisPie2 from "../projects/dashboard/Charts_Dashboard-6.png"
+import adminisMap from "../projects/dashboard/Charts_Dashboard-7.png"
+import adminisMap2 from "../projects/dashboard/Charts_Dashboard-8.png"
+// ecommerce
 import ecommerceThumb from "../projects/ecommerce/Thumbnail_Ecommerce.png"
+import ecommerceDetails from "../projects/ecommerce/Items_Details_Ecommerce.png"
+import ecommerceResp from "../projects/ecommerce/Responsive_Ecommerce.png"
+import ecommerceTheme from "../projects/ecommerce/Theme_Ecommerce.png"
+import ecommerceMenu from "../projects/ecommerce/Menu_Light_Ecommerce.png"
+import ecommerceMenu2 from "../projects/ecommerce/Menu_Dark_Ecommerce.png"
+import ecommerceCart from "../projects/ecommerce/Cart_Light_Ecommerce.png"
+import ecommerceCart2 from "../projects/ecommerce/Cart_Dark_Ecommerce.png"
+import ecommerceCheckout from "../projects/ecommerce/Checkout_Light_Ecommerce.png"
+import ecommerceCheckout2 from "../projects/ecommerce/Checkout_Dark_Ecommerce.png"
+import ecommerceCheckoutErr from "../projects/ecommerce/Checkout_Error_Light_Ecommerce.png"
+import ecommerceCheckoutErr2 from "../projects/ecommerce/Checkout_Error_Dark_Ecommerce.png"
+
+// academy
 import academyThumb from "../projects/academy/Thumbnail_Academy.png"
+import academyResp from "../projects/academy/Responsive_Academy.png"
+import academyComp from "../projects/academy/Complete_Academy.png"
+import academyComp2 from "../projects/academy/Complete_Academy-2.png"
+import academyComp3 from "../projects/academy/Complete_Academy-3.png"
 
 interface Content {
 	title: string
@@ -38,64 +71,43 @@ export const projects: Project[] = [
 				title: "Modern",
 				subtitle:
 					"A modern and sober design, for an agreable and efficient use.",
-				images: [
-					"/src/assets/projects/dashboard/Home_Dashboard.png",
-					"/src/assets/projects/dashboard/Home_Dashboard-2.png",
-				],
+				images: [adminisHome, adminisHome2],
 			},
 			{
 				title: "Responsive",
 				subtitle:
 					"A fully responsive design, bringing the best User Experience on every device.",
-				images: [
-					"/src/assets/projects/dashboard/Thumbnail_Dashboard.png",
-					"/src/assets/projects/dashboard/Theme_Dashboard.png",
-				],
+				images: [adminisThumb, adminisTheme],
 			},
 			{
 				title: "Accessible",
 				subtitle: "Custom navigation at your fingertips.",
-				images: ["/src/assets/projects/dashboard/Sidebar_Dashboard.png"],
+				images: [adminisSidebar],
 			},
 			{
 				title: "Tables",
 				subtitle: "Store your staff's informations to get quick access.",
-				images: [
-					"/src/assets/projects/dashboard/Tables_Dashboard.png",
-					"/src/assets/projects/dashboard/Tables_Dashboard-2.png",
-				],
+				images: [adminisTables, adminisTables2],
 			},
 			{
 				title: "Bar Chart",
 				subtitle: "Compare staff productivity to offer well deserved rewards.",
-				images: [
-					"/src/assets/projects/dashboard/Charts_Dashboard.png",
-					"/src/assets/projects/dashboard/Charts_Dashboard-2.png",
-				],
+				images: [adminisBar, adminisBar2],
 			},
 			{
 				title: "Line Chart",
 				subtitle: "Compare sales by period and see when to push marketing.",
-				images: [
-					"/src/assets/projects/dashboard/Charts_Dashboard-3.png",
-					"/src/assets/projects/dashboard/Charts_Dashboard-4.png",
-				],
+				images: [adminisLine, adminisLine2],
 			},
 			{
 				title: "Pie Chart",
 				subtitle: "Get an easy repartition overview to take better decisions.",
-				images: [
-					"/src/assets/projects/dashboard/Charts_Dashboard-5.png",
-					"/src/assets/projects/dashboard/Charts_Dashboard-6.png",
-				],
+				images: [adminisPie, adminisPie2],
 			},
 			{
 				title: "Map Chart",
 				subtitle: "Visualize geographic data to get a broader understanding.",
-				images: [
-					"/src/assets/projects/dashboard/Charts_Dashboard-7.png",
-					"/src/assets/projects/dashboard/Charts_Dashboard-8.png",
-				],
+				images: [adminisMap, adminisMap2],
 			},
 		],
 	},
@@ -110,48 +122,33 @@ export const projects: Project[] = [
 			{
 				title: "Complete",
 				subtitle: "A fully functionnal E-commerce website.",
-				images: ["/src/assets/projects/ecommerce/Items_Details_Ecommerce.png"],
+				images: [ecommerceDetails],
 			},
 			{
 				title: "Responsive",
 				subtitle:
 					"A responsive design, bringing the best User Experience on every device.",
-				images: [
-					"/src/assets/projects/ecommerce/Responsive_Ecommerce.png",
-					"/src/assets/projects/ecommerce/Theme_Ecommerce.png",
-				],
+				images: [ecommerceResp, ecommerceTheme],
 			},
 			{
 				title: "Accessible",
 				subtitle: "Custom navigation at your fingertips.",
-				images: [
-					"/src/assets/projects/ecommerce/Menu_Light_Ecommerce.png",
-					"/src/assets/projects/ecommerce/Menu_Dark_Ecommerce.png",
-				],
+				images: [ecommerceMenu, ecommerceMenu2],
 			},
 			{
 				title: "Functionnal",
 				subtitle: "Functionnalities such as a Cart and Checkout",
-				images: [
-					"/src/assets/projects/ecommerce/Cart_Light_Ecommerce.png",
-					"/src/assets/projects/ecommerce/Cart_Dark_Ecommerce.png",
-				],
+				images: [ecommerceCart, ecommerceCart2],
 			},
 			{
 				title: "Modern",
 				subtitle: "A sober yet design UI.",
-				images: [
-					"/src/assets/projects/ecommerce/Checkout_Light_Ecommerce.png",
-					"/src/assets/projects/ecommerce/Checkout_Dark_Ecommerce.png",
-				],
+				images: [ecommerceCheckout, ecommerceCheckout2],
 			},
 			{
 				title: "Interactive",
 				subtitle: "Give instant feedback on change.",
-				images: [
-					"/src/assets/projects/ecommerce/Checkout_Error_Light_Ecommerce.png",
-					"/src/assets/projects/ecommerce/Checkout_Error_Dark_Ecommerce.png",
-				],
+				images: [ecommerceCheckoutErr, ecommerceCheckoutErr2],
 			},
 		],
 	},
@@ -167,22 +164,18 @@ export const projects: Project[] = [
 				title: "Modern",
 				subtitle:
 					"A light and modern design, for an agreable and efficient use.",
-				images: ["/src/assets/projects/academy/Thumbnail_Academy.png"],
+				images: [academyThumb],
 			},
 			{
 				title: "Responsive",
 				subtitle:
 					"A fully responsive design, bringing the best User Experience on every device.",
-				images: ["/src/assets/projects/academy/Responsive_Academy.png"],
+				images: [academyResp],
 			},
 			{
 				title: "Complete",
 				subtitle: "Diverse sections to bring out the best of you.",
-				images: [
-					"/src/assets/projects/academy/Complete_Academy-3.png",
-					"/src/assets/projects/academy/Complete_Academy-2.png",
-					"/src/assets/projects/academy/Complete_Academy.png",
-				],
+				images: [academyComp3, academyComp2, academyComp],
 			},
 		],
 	},
