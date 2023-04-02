@@ -12,6 +12,7 @@ import { fadeIn } from "../animation"
 import { FaReact } from "react-icons/fa"
 import { DiJavascript1 } from "react-icons/di"
 import { SiMui, SiRedux, SiTypescript } from "react-icons/si"
+import { BsArrowDown } from "react-icons/bs"
 
 const ProjectDetails: FC = () => {
 	const { id } = useParams()
@@ -82,6 +83,16 @@ const ProjectDetails: FC = () => {
 				>
 					<button className="btn btn-sm">Check full project</button>
 				</motion.a>
+				<div className="absolute bottom-[20px] left-[50%] translate-x-[-50%] animate-pulse opacity-40">
+					<motion.div
+						variants={fadeIn("down", 1.8)}
+						initial="hidden"
+						whileInView={"show"}
+						viewport={{ once: false, amount: 0.7 }}
+					>
+						<BsArrowDown size={56} />
+					</motion.div>
+				</div>
 			</div>
 			<section className="mt-24 flex flex-col gap-y-24 lg:gap-y-48 ">
 				{/* project content */}

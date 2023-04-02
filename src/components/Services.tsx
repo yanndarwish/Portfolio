@@ -54,17 +54,6 @@ const Services: FC = () => {
 											{service.description}
 										</p>
 									</div>
-									<div className="flex flex-col flex-1 items-end">
-										<a
-											href={service.link}
-											className="btn w-9 h-9 mb-[42px] flex justify-center items-center"
-										>
-											<BsArrowUpRight />
-										</a>
-										<a href={service.link} className="text-gradient text-sm">
-											Learn more
-										</a>
-									</div>
 								</motion.div>
 							))}
 						</div>

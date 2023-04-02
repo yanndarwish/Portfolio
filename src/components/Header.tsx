@@ -8,8 +8,6 @@ import { useLocation } from "react-router-dom"
 const Header: FC = () => {
 	const location = useLocation()
 
-	console.log(location)
-
 	return (
 		<header className="py-8">
 			<div className="container mx-auto">
