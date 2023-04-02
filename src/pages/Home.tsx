@@ -1,11 +1,22 @@
-export interface IHomeProps {}
+// FC
+import { FC } from "react"
+// components
+import About from "../components/About"
+import Banner from "../components/Banner"
+import Contact from "../components/Contact"
+import Nav from "../components/Nav"
+import Services from "../components/Services"
+import Work from "../components/Work"
 
-const Home = (props: IHomeProps) => {
+const Home: FC = () => {
 	return (
 		<div>
-			Home
-			<a href="/projects">projects</a>
-			<a href="/projects/1">details</a>
+			<Nav />
+			<Banner />
+			<About />
+			<Services />
+			<Work />
+			<Contact />
 		</div>
 	)
 }
