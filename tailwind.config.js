@@ -25,8 +25,8 @@ module.exports = {
 				accent: "#2F8AAF",
 			},
 			backgroundImage: {
-				about: "url('./assets/images/programming.png')",
-				services: "url('./assets/images/code-typing.png')",
+				// about: "url('./assets/images/programming.png')",
+				// services: "url('./assets/images/code-typing.png')",
 			},
 		},
 	},
