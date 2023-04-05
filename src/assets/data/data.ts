@@ -36,6 +36,19 @@ import academyComp from "../projects/academy/Complete_Academy.png"
 import academyComp2 from "../projects/academy/Complete_Academy-2.png"
 import academyComp3 from "../projects/academy/Complete_Academy-3.png"
 
+// streammaze
+import streammazeThumb from "../projects/streammaze/Thumbnail_StreamMaze.png"
+import streammazeResp from "../projects/streammaze/Responsive_Large_StreamMaze.png"
+import streammazeResp2 from "../projects/streammaze/Responsive_Small_StreamMaze.png"
+import streammazeFilm from "../projects/streammaze/Film_Large_StreamMaze.png"
+import streammazeFilm2 from "../projects/streammaze/Film_Small_StreamMaze.png"
+import streammazeSeason from "../projects/streammaze/Season_Large_StreamMaze.png"
+import streammazeSeason2 from "../projects/streammaze/Season_Small_StreamMaze.png"
+import streammazeSearch from "../projects/streammaze/Search_StreamMaze.png"
+import streammazeSearch2 from "../projects/streammaze/Search_Results_StreamMaze.png"
+import streammazeTrailer from "../projects/streammaze/Trailer_StreamMaze.png"
+
+
 interface Content {
 	title: string
 	subtitle: string
@@ -59,6 +72,44 @@ interface Project {
 }
 
 export const projects: Project[] = [
+	{
+		id: 4,
+		title: "StreamMaze",
+		subtitle: "The Movie app",
+		thumbnail: streammazeThumb,
+		link: "https://stream-maze.vercel.app",
+		tech: ["react", "typescript", "tailwind", "api"],
+		content: [
+			{
+				title: "Complete",
+				subtitle:
+					"Get all the details about your favorite content thanks to the TMDB API.",
+				images: [streammazeFilm, streammazeFilm2],
+			},
+			{
+				title: "Responsive",
+				subtitle:
+					"A fully responsive design, bringing the best User Experience on every device.",
+				images: [streammazeResp, streammazeResp2],
+			},
+			{
+				title: "Explore",
+				subtitle:
+					"Find exactly what you're looking for, with the search functionnality.",
+				images: [streammazeSearch, streammazeSearch2],
+			},
+			{
+				title: "Detailed",
+				subtitle: "Get detailed seasons overview.",
+				images: [streammazeSeason, streammazeSeason2],
+			},
+			{
+				title: "Functionnal",
+				subtitle: "Watch the trailers directly from the app",
+				images: [streammazeTrailer],
+			},
+		],
+	},
 	{
 		id: 1,
 		title: "Adminis",
@@ -152,33 +203,33 @@ export const projects: Project[] = [
 			},
 		],
 	},
-	{
-		id: 3,
-		title: "Academy",
-		subtitle: "The Landing page",
-		thumbnail: academyThumb,
-		link: "https://yanndarwish.github.io/Academy/",
-		tech: ["react", "typescript", "mui"],
-		content: [
-			{
-				title: "Modern",
-				subtitle:
-					"A light and modern design, for an agreable and efficient use.",
-				images: [academyThumb],
-			},
-			{
-				title: "Responsive",
-				subtitle:
-					"A fully responsive design, bringing the best User Experience on every device.",
-				images: [academyResp],
-			},
-			{
-				title: "Complete",
-				subtitle: "Diverse sections to bring out the best of you.",
-				images: [academyComp3, academyComp2, academyComp],
-			},
-		],
-	},
+	// {
+	// 	id: 3,
+	// 	title: "Academy",
+	// 	subtitle: "The Landing page",
+	// 	thumbnail: academyThumb,
+	// 	link: "https://yanndarwish.github.io/Academy/",
+	// 	tech: ["react", "typescript", "mui"],
+	// 	content: [
+	// 		{
+	// 			title: "Modern",
+	// 			subtitle:
+	// 				"A light and modern design, for an agreable and efficient use.",
+	// 			images: [academyThumb],
+	// 		},
+	// 		{
+	// 			title: "Responsive",
+	// 			subtitle:
+	// 				"A fully responsive design, bringing the best User Experience on every device.",
+	// 			images: [academyResp],
+	// 		},
+	// 		{
+	// 			title: "Complete",
+	// 			subtitle: "Diverse sections to bring out the best of you.",
+	// 			images: [academyComp3, academyComp2, academyComp],
+	// 		},
+	// 	],
+	// },
 ]
 
 export const services: Service[] = [

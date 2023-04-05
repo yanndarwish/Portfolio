@@ -11,7 +11,8 @@ import { fadeIn } from "../animation"
 // icons
 import { FaReact } from "react-icons/fa"
 import { DiJavascript1 } from "react-icons/di"
-import { SiMui, SiRedux, SiTypescript } from "react-icons/si"
+import { AiFillApi } from "react-icons/ai"
+import { SiMui, SiRedux, SiTypescript, SiTailwindcss } from "react-icons/si"
 import { BsArrowDown } from "react-icons/bs"
 
 const ProjectDetails: FC = () => {
@@ -65,6 +66,10 @@ const ProjectDetails: FC = () => {
 									<SiRedux />
 								) : tech === "typescript" ? (
 									<SiTypescript />
+								) : tech === "tailwind" ? (
+									<SiTailwindcss />
+								) : tech === "api" ? (
+									<AiFillApi />
 								) : undefined}
 								<div className="opacity-0 absolute top-20 group-hover:opacity-100 transition-opacity duration-300">
 									{tech.toUpperCase()}
