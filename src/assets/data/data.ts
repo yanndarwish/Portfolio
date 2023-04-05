@@ -115,7 +115,7 @@ export const projects: Project[] = [
 		title: "Adminis",
 		subtitle: "The complete Dashboard",
 		thumbnail: adminisThumb,
-		link: "https://yanndarwish.github.io/Dashboard/",
+		link: "https://dashboard-yanndarwish.vercel.app",
 		tech: ["typescript", "react", "mui"],
 		content: [
 			{
