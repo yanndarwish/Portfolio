@@ -12,7 +12,14 @@ import { fadeIn } from "../animation"
 import { FaReact } from "react-icons/fa"
 import { DiJavascript1 } from "react-icons/di"
 import { AiFillApi } from "react-icons/ai"
-import { SiMui, SiRedux, SiTypescript, SiTailwindcss } from "react-icons/si"
+import {
+	SiMui,
+	SiRedux,
+	SiTypescript,
+	SiTailwindcss,
+	SiElectron,
+	SiMongodb,
+} from "react-icons/si"
 import { BsArrowDown } from "react-icons/bs"
 
 const ProjectDetails: FC = () => {
@@ -70,6 +77,10 @@ const ProjectDetails: FC = () => {
 									<SiTailwindcss />
 								) : tech === "api" ? (
 									<AiFillApi />
+								) : tech === "electron" ? (
+									<SiElectron />
+								) : tech === "mongodb" ? (
+									<SiMongodb />
 								) : undefined}
 								<div className="opacity-0 absolute top-20 group-hover:opacity-100 transition-opacity duration-300">
 									{tech.toUpperCase()}
@@ -78,16 +89,18 @@ const ProjectDetails: FC = () => {
 						)
 					})}
 				</div>
-				<motion.a
-					variants={fadeIn("up", 1.2)}
-					initial="hidden"
-					whileInView={"show"}
-					viewport={{ once: false, amount: 0.7 }}
-					href={project.link}
-					target="_blank"
-				>
-					<button className="btn btn-sm">Check full project</button>
-				</motion.a>
+				{project.link && (
+					<motion.a
+						variants={fadeIn("up", 1.2)}
+						initial="hidden"
+						whileInView={"show"}
+						viewport={{ once: false, amount: 0.7 }}
+						href={project.link}
+						target="_blank"
+					>
+						<button className="btn btn-sm">Check full project</button>
+					</motion.a>
+				)}
 				<div className="absolute bottom-[20px] left-[50%] translate-x-[-50%] animate-pulse opacity-40">
 					<motion.div
 						variants={fadeIn("down", 1.8)}
@@ -99,7 +112,11 @@ const ProjectDetails: FC = () => {
 					</motion.div>
 				</div>
 			</div>
-			<section className="mt-24 flex flex-col gap-y-24 lg:gap-y-48 ">
+			<section
+				className={`mt-24 flex flex-col gap-y-24 lg:gap-y-48 ${
+					!project.link && "mb-8"
+				}`}
+			>
 				{/* project content */}
 				{project.content.map((item, i) => (
 					<article key={i}>
@@ -163,27 +180,31 @@ const ProjectDetails: FC = () => {
 						</div>
 					</article>
 				))}
-				<div className="flex flex-col justify-center items-center h-screen">
-					<motion.h2
-						variants={fadeIn("up", 0.3)}
-						initial="hidden"
-						whileInView={"show"}
-						viewport={{ once: false, amount: 0.7 }}
-						className="h2 lg:mb-16 text-center hidden lg:block"
-					>
-						Come and Checkout the full project!
-					</motion.h2>
-					<motion.a
-						variants={fadeIn("up", 0.5)}
-						initial="hidden"
-						whileInView={"show"}
-						viewport={{ once: false, amount: 0.7 }}
-						href={project.link}
-						target="_blank"
-					>
-						<button className="btn btn-sm">Check full project</button>
-					</motion.a>
-				</div>
+				{project.link && (
+					<div className="flex flex-col justify-center items-center h-screen">
+						<>
+							<motion.h2
+								variants={fadeIn("up", 0.3)}
+								initial="hidden"
+								whileInView={"show"}
+								viewport={{ once: false, amount: 0.7 }}
+								className="h2 lg:mb-16 text-center hidden lg:block"
+							>
+								Come and Checkout the full project!
+							</motion.h2>
+							<motion.a
+								variants={fadeIn("up", 0.5)}
+								initial="hidden"
+								whileInView={"show"}
+								viewport={{ once: false, amount: 0.7 }}
+								href={project.link}
+								target="_blank"
+							>
+								<button className="btn btn-sm">Check full project</button>
+							</motion.a>
+						</>
+					</div>
+				)}
 			</section>
 		</div>
 	) : (

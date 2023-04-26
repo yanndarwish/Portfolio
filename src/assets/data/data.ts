@@ -48,6 +48,13 @@ import streammazeSearch from "../projects/streammaze/Search_StreamMaze.png"
 import streammazeSearch2 from "../projects/streammaze/Search_Results_StreamMaze.png"
 import streammazeTrailer from "../projects/streammaze/Trailer_StreamMaze.png"
 
+// jobhunter
+import jobhunterThumb from "../projects/jobhunter/Thumbnail_JobHunter.png"
+import jobhunterSecure from "../projects/jobhunter/Secure_JobHunter.png"
+import jobhunterVisual from "../projects/jobhunter/Visual_JobHunter.png"
+import jobhunterPractical from "../projects/jobhunter/Practical_JobHunter.png"
+import jobhunterSearch from "../projects/jobhunter/Search_JobHunter.png"
+import jobhunterUseful from "../projects/jobhunter/Useful_JobHunter.png"
 
 interface Content {
 	title: string
@@ -72,6 +79,44 @@ interface Project {
 }
 
 export const projects: Project[] = [
+	{
+		id: 5,
+		title: "JobHunter",
+		subtitle: "The Job Application Tracker",
+		thumbnail: jobhunterThumb,
+		link: "",
+		tech: ["electron", "react", "typescript", "tailwind", "mongodb"],
+		content: [
+			{
+				title: "Secure",
+				subtitle:
+					"Using JWT token and hashed password to protect your account.",
+				images: [jobhunterSecure],
+			},
+			{
+				title: "Visual",
+				subtitle:
+					"Visualize your job hunting statistics with one look.",
+				images: [jobhunterVisual],
+			},
+			{
+				title: "Practical",
+				subtitle:
+					"Create, update and delete your job applications.",
+				images: [jobhunterPractical],
+			},
+			{
+				title: "Hide & seek",
+				subtitle: "Search and filter through the list to find a particular item.",
+				images: [jobhunterSearch],
+			},
+			{
+				title: "Useful",
+				subtitle: "Get reminded to revive your job applications, after a certain period.",
+				images: [jobhunterUseful],
+			},
+		],
+	},
 	{
 		id: 4,
 		title: "StreamMaze",
